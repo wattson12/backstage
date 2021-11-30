@@ -78,7 +78,7 @@ export class SamlAuthProvider implements AuthProviderRouteHandlers {
 
       const id = result.fullProfile.nameID;
 
-      const idToken = await this.tokenIssuer.issueToken({
+      const token = await this.tokenIssuer.issueToken({
         claims: { sub: id },
       });
 
@@ -90,7 +90,7 @@ export class SamlAuthProvider implements AuthProviderRouteHandlers {
             displayName: result.fullProfile.displayName,
           },
           providerInfo: {},
-          backstageIdentity: { id, idToken },
+          backstageIdentity: { id, token },
         },
       });
     } catch (error) {

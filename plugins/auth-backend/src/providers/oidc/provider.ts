@@ -187,7 +187,7 @@ export class OidcAuthProvider implements OAuthHandlers {
     }
     const id = profile.email.split('@')[0];
 
-    return { ...response, backstageIdentity: { id } };
+    return { ...response, backstageIdentity: { id, token: '' } };
   }
 }
 

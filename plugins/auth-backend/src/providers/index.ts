@@ -36,4 +36,4 @@ export type {
 
 // These types are needed for a postMessage from the login pop-up
 // to the frontend
-export type { AuthResponse, BackstageIdentity, ProfileInfo } from './types';
+export type { AuthResponse, BackstageUserIdentity, ProfileInfo } from './types';
