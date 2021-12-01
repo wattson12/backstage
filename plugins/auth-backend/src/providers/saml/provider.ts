@@ -30,6 +30,7 @@ import { AuthProviderRouteHandlers, AuthProviderFactory } from '../types';
 import { postMessageResponse } from '../../lib/flow';
 import { TokenIssuer } from '../../identity/types';
 import { isError } from '@backstage/errors';
+import { decorateWithIdentity } from '../decorateWithIdentity';
 
 type SamlInfo = {
   fullProfile: any;
@@ -82,6 +83,8 @@ export class SamlAuthProvider implements AuthProviderRouteHandlers {
         claims: { sub: id },
       });
 
+      const backstageIdentity = decorateWithIdentity({ id, token });
+
       return postMessageResponse(res, this.appUrl, {
         type: 'authorization_response',
         response: {
@@ -90,7 +93,7 @@ export class SamlAuthProvider implements AuthProviderRouteHandlers {
             displayName: result.fullProfile.displayName,
           },
           providerInfo: {},
-          backstageIdentity: { id, token },
+          backstageIdentity,
         },
       });
     } catch (error) {
