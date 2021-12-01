@@ -1,5 +1,14 @@
 # @backstage/plugin-search
 
+## 0.4.19
+
+### Patch Changes
+
+- f06ecd09a7: Add optional icon and secondaryAction properties for DefaultResultListItem component
+- c5941d5c30: Add a new optional clearButton property to the SearchBar component. The default value for this new property is true.
+- Updated dependencies
+  - @backstage/core-plugin-api@0.2.2
+
 ## 0.4.18
 
 ### Patch Changes

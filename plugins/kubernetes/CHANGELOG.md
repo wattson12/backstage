@@ -1,5 +1,13 @@
 # @backstage/plugin-kubernetes
 
+## 0.4.22
+
+### Patch Changes
+
+- 86ed770308: Added accordions to display information on Jobs and CronJobs in the kubernetes plugin. Updated the PodsTable with fewer default columns and the ability to pass in additional ones depending on the use case.
+- Updated dependencies
+  - @backstage/core-plugin-api@0.2.2
+
 ## 0.4.21
 
 ### Patch Changes

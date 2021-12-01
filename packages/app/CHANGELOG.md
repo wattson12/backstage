@@ -1,5 +1,20 @@
 # example-app
 
+## 0.2.55
+
+### Patch Changes
+
+- Updated dependencies
+  - @backstage/plugin-azure-devops@0.1.5
+  - @backstage/plugin-user-settings@0.3.12
+  - @backstage/cli@0.10.0
+  - @backstage/plugin-circleci@0.2.30
+  - @backstage/core-plugin-api@0.2.2
+  - @backstage/plugin-search@0.4.19
+  - @backstage/core-app-api@0.1.24
+  - @backstage/plugin-kubernetes@0.4.22
+  - @backstage/plugin-scaffolder@0.11.13
+
 ## 0.2.53
 
 ### Patch Changes

@@ -1,5 +1,16 @@
 # @backstage/plugin-permission-node
 
+## 0.2.0
+
+### Minor Changes
+
+- e7851efa9e: Rename and adjust permission policy return type to reduce nesting
+
+### Patch Changes
+
+- Updated dependencies
+  - @backstage/plugin-auth-backend@0.4.10
+
 ## 0.1.0
 
 ### Minor Changes
