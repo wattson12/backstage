@@ -73,6 +73,7 @@ import {
   TechDocsReaderPage,
 } from '@backstage/plugin-techdocs';
 import { UserSettingsPage } from '@backstage/plugin-user-settings';
+import { XcmetricsPage } from '@backstage/plugin-xcmetrics';
 import AlarmIcon from '@material-ui/icons/Alarm';
 import React from 'react';
 import { hot } from 'react-hot-loader/root';
@@ -218,6 +219,7 @@ const routes = (
     />
     <Route path="/settings" element={<UserSettingsPage />} />
     <Route path="/azure-pull-requests" element={<AzurePullRequestsPage />} />
+    <Route path="/xcmetrics" element={<XcmetricsPage />} />
   </FlatRoutes>
 );
 
